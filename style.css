@@ -80,7 +80,15 @@ position: relative;
     background-color: darkmagenta;
     color: white;
     padding: 6px;
-    border-radius: 5px
+    border-radius: 5px;
+    border:solid darkmagenta 1pxg ;
+    
+}
+.categories p:hover{
+    background-color: white;
+    color: darkmagenta;
+    cursor: pointer;
+    border: solid darkmagenta 1px;
 }
 .image{
     position: relative;
@@ -97,6 +105,21 @@ position: relative;
     position: absolute;
     top: 10px;
     left: 9px;
+    animation-name: zoom;
+    animation-duration: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+
+}
+@keyframes zoom {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 .recommend{
     padding: 10px;
